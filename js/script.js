@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', ()  => {
     const hamburger = document.querySelector('.hamburger');
 
     const touchHandler = (e) => {
-        e.preventDefault();
         hamburger.classList.toggle('hamburger_active');
         menu.classList.toggle('menu_active');
     };
