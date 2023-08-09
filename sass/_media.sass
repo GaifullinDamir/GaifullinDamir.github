@@ -26,13 +26,56 @@
 @media (max-width: 576px)
     header
         nav
+            min-height: 35px
+            .container
+                min-height: 35px
             .menu
+                position: fixed
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                width: 50%
+                height: 100vh
+                padding: 20px 15px
+                background-color: #00000099
+                top: 0
+                right: -50%
+                transition: 0.6s all
+                &_active
+                    right: 0
                 &_link
+                    color: #ffffffd4
                     &:hover
-                        color: $main-text
+                        color: #ffffffd4
                         &::before, &::after
                             height: 0px
                     @include header_link_active
+            .hamburger
+                display: block
+                position: absolute
+                left: 10px
+                top: 50%
+                transform: translateY(-50%)
+                width: 27px
+                height: 12px
+                cursor: pointer
+                span
+                    display: block
+                    height: 2px
+                    width: 100%
+                    background-color: $main-text
+                    margin-bottom: 2px
+                    transition: 1.5s all
+                &_active
+                    span
+                        margin-bottom: -2px
+                        &:nth-child(1)
+                            transform: translateY(3px) rotate(-405deg)
+                        &:nth-child(2)
+                            display: none
+                        &:nth-child(3)
+                            transform: translateY(3px) rotate(405deg)
+                    
     .aboutme
         min-height: 400px
         &_wrapper
