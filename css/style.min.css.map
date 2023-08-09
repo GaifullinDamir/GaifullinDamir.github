@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,AAAC,CACD,WAAW,CAAE,qBAAqB,CAAG",
-    "sources": [
-        "../sass/style.sass",
-        "../sass/_general.sass"
-    ],
-    "names": [],
-    "file": "style.min.css"
-}
+{"version":3,"sources":["../sass/style.sass","../sass/_general.sass","../sass/_variables.sass","../sass/_mixins.sass"],"names":[],"mappings":"AAAA,EACC,gCAAA,CAAA,WCCO,eAAA,CACA,UAAA,CACA,kBCJU,CDKV,sBACI,mBAAA,CAAA,mBAAA,CAAA,YAAA,CACA,eAAA,CACA,wBAAA,CAAA,qBAAA,CAAA,kBAAA,CAEA,qBACI,UAAA,CACR,iBACI,mBAAA,CAAA,mBAAA,CAAA,YAAA,CACA,sBAAA,CAAA,mBAAA,CAAA,qBAAA,CACA,eAAA,CACA,QAAA,CACA,sBACI,gBAAA,CACA,8BAAA,CACA,mCACI,6BAAA,CACR,sBACI,oBAAA,CACA,aCvBJ,CAAA,0BAAA,CAAA,kBAAA,CCCX,4BACC,UAAA","file":"style.min.css"}

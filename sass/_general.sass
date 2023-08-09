@@ -1,0 +1,29 @@
+header
+    nav
+        min-height: 65px
+        width: 100%
+        background: $dark-main-color
+        .container
+            display: flex
+            min-height: 65px
+            align-items: center
+        .logo
+            &_img
+                width:42px
+        .menu
+            display: flex
+            justify-content: start
+            list-style: none
+            margin: 0
+            &_item
+                padding: 5px 25px
+                border-right: 2px solid $line-gray
+                &:nth-child(1)
+                    border-left: 2px solid $line-gray
+            &_link
+                text-decoration: none
+                color: $line-gray
+                @include header_link_hover
+                    
+
+
