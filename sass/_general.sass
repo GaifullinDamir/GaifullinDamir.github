@@ -2,28 +2,84 @@ header
     nav
         min-height: 65px
         width: 100%
-        background: $dark-main-color
         .container
             display: flex
             min-height: 65px
             align-items: center
-        .logo
-            &_img
-                width:42px
+            justify-content: center
         .menu
+            padding-left: 0
             display: flex
             justify-content: start
             list-style: none
             margin: 0
-            &_item
-                padding: 5px 25px
-                border-right: 2px solid $line-gray
-                &:nth-child(1)
-                    border-left: 2px solid $line-gray
             &_link
+                position: relative
+                display: block
+                padding: 5px 25px
+                font-weight: 700
+                font-size: 24px
                 text-decoration: none
-                color: $line-gray
+                color: $main-text
+                
+                &::before
+                    display: block
+                    background-color: $main-text
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: 0
+                    width: 1px
+                    height: 0px
+                    position: absolute
+                    content: ''
+                    transition: 0.3s all
+                &::after
+                    display: block
+                    background-color: $main-text
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: 100%
+                    width: 1px
+                    height: 0px
+                    position: absolute
+                    content: ''
+                    transition: 0.3s all                    
                 @include header_link_hover
+    border-bottom: 2px solid $main-text
                     
+body
+    min-height: 100vh
+    background: url(../img/bg/marble-grey-op15.png) center center/cover no-repeat
 
+.title
+    text-align: center
+    margin-top: 25px
+    font-size: 42px
+
+.aboutme
+    min-height: 350px
+    &_wrapper
+        margin-top: 25px
+        display: flex
+        justify-content: center
+        align-items: center
+    &_avatar
+        width:  220px
+        height: 220px
+        background: url('../img/avatar.jpg') center (center/cover) no-repeat
+        border-radius: 100%
+    &_badge
+        padding-left: 25px
+        font-size: 24px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+    &_descr
+        width: 600px
+        font-size: 24px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        margin: 0 auto
+        margin-top: 25px
 

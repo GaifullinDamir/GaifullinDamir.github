@@ -1,4 +1,13 @@
+// @mixin header_link_hover
+// 	transition: 0.3s all
+// 	&:hover
+// 		color: $second-text
+// 		&::before, &::after
+// 			content: '|'
+
 @mixin header_link_hover
 	transition: 0.3s all
 	&:hover
-		color: #ffffff
+		color: $second-text
+		&::before, &::after
+			height: 35px
