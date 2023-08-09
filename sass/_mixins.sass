@@ -2,7 +2,13 @@
 	transition: 0.3s all
 	&:hover
 		color: $vegas-gold
-		// background-color: $black-op10
+		&::before, &::after
+			background-color: $vegas-gold
+			height: 35px
+@mixin header_link_active
+	transition: 0.3s all
+	&:active
+		color: $vegas-gold
 		&::before, &::after
 			background-color: $vegas-gold
 			height: 35px
@@ -15,3 +21,10 @@
 			background-color: $vegas-gold
 			height: 35px
 
+@mixin site_link_active
+	transition: 0.3s all
+	&:active
+		color: $vegas-gold
+		&::before, &::after
+			background-color: $vegas-gold
+			height: 35px
