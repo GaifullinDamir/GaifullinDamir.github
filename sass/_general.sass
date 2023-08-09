@@ -53,12 +53,14 @@ body
 
 .title
     text-align: center
-    margin-top: 25px
     font-size: 42px
     color: $main-text
 
 .aboutme
-    min-height: 350px
+    min-height: 650px
+    border-bottom: 1px solid $second-text
+    padding: 25px 0
+
     &_wrapper
         margin-top: 25px
         display: flex
@@ -70,6 +72,7 @@ body
         background: url('../img/avatar.jpg') center (center/cover) no-repeat
         border-radius: 100%
     &_badge
+        color: $main-text
         padding-left: 25px
         font-size: 24px
         font-style: normal
@@ -79,6 +82,7 @@ body
             font-size: 24px
             font-weight: 700
     &_descr
+        color: $main-text
         text-align: center
         width: 600px
         font-size: 24px
@@ -89,6 +93,7 @@ body
         margin-top: 35px
     &_knowledges
         width: 600px
+        color: $main-text
         font-size: 24px
         font-style: normal
         font-weight: 200
@@ -104,3 +109,48 @@ body
             list-style: none
             margin-top: 15px
 
+.works
+    padding: 25px 0
+    &_wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &_list
+        list-style: none
+        padding: 0
+        &_item
+            margin-top: 25px
+            &_link
+                position: relative
+                padding: 5px 25px
+                display: block
+                font-size: 32px
+                font-style: normal
+                font-weight: 200
+                line-height: normal
+                text-decoration: none
+                color: $main-text
+                &::before
+                    display: block
+                    background-color: $main-text
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: 0
+                    width: 1px
+                    height: 0px
+                    position: absolute
+                    content: ''
+                    transition: 0.3s all
+                &::after
+                    display: block
+                    background-color: $main-text
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: 100%
+                    width: 1px
+                    height: 0px
+                    position: absolute
+                    content: ''
+                    transition: 0.3s all                    
+                @include site_link_hover

@@ -1,13 +1,17 @@
-// @mixin header_link_hover
-// 	transition: 0.3s all
-// 	&:hover
-// 		color: $second-text
-// 		&::before, &::after
-// 			content: '|'
-
 @mixin header_link_hover
 	transition: 0.3s all
 	&:hover
-		color: $second-text
+		color: $vegas-gold
+		// background-color: $black-op10
 		&::before, &::after
+			background-color: $vegas-gold
 			height: 35px
+
+@mixin site_link_hover
+	transition: 0.3s all
+	&:hover
+		color: $vegas-gold
+		&::before, &::after
+			background-color: $vegas-gold
+			height: 35px
+
