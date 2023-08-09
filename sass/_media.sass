@@ -45,6 +45,7 @@
                     right: 0
                 &_link
                     color: #ffffffd4
+
                     &:hover
                         color: #ffffffd4
                         &::before, &::after
@@ -65,16 +66,17 @@
                     width: 100%
                     background-color: $main-text
                     margin-bottom: 2px
-                    transition: 1.5s all
+                    transition: 0.5s all
                 &_active
                     span
                         margin-bottom: -2px
                         &:nth-child(1)
-                            transform: translateY(3px) rotate(-405deg)
+                            transform: translateY(3px) rotate(-45deg)
                         &:nth-child(2)
-                            display: none
+                            opacity: 0
+                            transform: translateX(-150px)
                         &:nth-child(3)
-                            transform: translateY(3px) rotate(405deg)
+                            transform: translateY(3px) rotate(45deg)
                     
     .aboutme
         min-height: 400px

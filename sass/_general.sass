@@ -132,26 +132,5 @@ body
                 line-height: normal
                 text-decoration: none
                 color: $main-text
-                &::before
-                    display: block
-                    background-color: $main-text
-                    top: 50%
-                    transform: translateY(-50%)
-                    left: 0
-                    width: 1px
-                    height: 0px
-                    position: absolute
-                    content: ''
-                    transition: 0.3s all
-                &::after
-                    display: block
-                    background-color: $main-text
-                    top: 50%
-                    transform: translateY(-50%)
-                    left: 100%
-                    width: 1px
-                    height: 0px
-                    position: absolute
-                    content: ''
-                    transition: 0.3s all                    
+                border: 2px solid $black-op25                   
                 @include site_link_hover
