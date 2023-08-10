@@ -1,3 +1,28 @@
+.preloader 
+    transition: 1s all
+    position: fixed
+    display: flex
+    justify-content: center
+    align-items: center
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    overflow: hidden
+    z-index: 1001
+    background-color: #ffffff
+    &__image 
+        text-align: center
+
+.loaded_hiding 
+    .preloader 
+        transition: 1s opacity
+        opacity: 0
+
+.loaded 
+    .preloader
+        display: none
+
 header
     nav
         position: relative
@@ -50,7 +75,7 @@ header
                     
 body
     min-height: 100vh
-    background: url(../img/bg/marble-grey-op15.png) center center/cover no-repeat
+    background: url(../img/bg/marble-grey.jpg) center center/cover no-repeat
 
 .title
     text-align: center
