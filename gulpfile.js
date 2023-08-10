@@ -8,13 +8,13 @@ const cleanCSS = require('gulp-clean-css');
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: './'
+            baseDir: 'src'
         }
     });
 });
 
 gulp.task('styles', function() {
-    return gulp.src('sass/*.+(scss|sass)')
+    return gulp.src('src/sass/*.+(scss|sass)')
         .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({
             prefix: '',
@@ -24,12 +24,12 @@ gulp.task('styles', function() {
 			cascade: false
 		    }))
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('css'))   
+        .pipe(gulp.dest('src/css'))   
         .pipe(browserSync.stream());
 });
 
 gulp.task('watch', function() {
-    gulp.watch('sass/*.+(scss|sass)', gulp.parallel('styles'));
+    gulp.watch('src/sass/*.+(scss|sass)', gulp.parallel('styles'));
     gulp.watch('*.html').on('change', browserSync.reload);
 });
 
