@@ -1,27 +1,25 @@
 @mixin header_link_hover
-	transition: 0.3s all
+	transition: 0.7s all
 	&:hover
-		color: $vegas-gold
+		color: $main-text
 		&::before, &::after
-			background-color: $vegas-gold
+			background-color: $main-text
 			height: 35px
 @mixin header_link_active
-	transition: 0.3s all
+	transition: 0.7s all
 	&:active
-		color: $vegas-gold
+		color: $main-text
 		&::before, &::after
-			background-color: $vegas-gold
+			background-color: $main-text
 			height: 35px			
 
 @mixin site_link_hover
-	transition: 0.3s all
+	transition: 0.7s all
 	&:hover
-		color: $vegas-gold
-		border-color: $vegas-gold 
-		background-color: $white-gold
+		box-shadow: 0px 0px 5px 0px #00000022, inset 0px 0px 7px 0px #00000037   
+		color: $main-text-op75
 
 @mixin site_link_active
-	transition: 0.3s all
+	transition: 0.7s all
 	&:active
-		color: $vegas-gold
-		border-color: $vegas-gold 
+		box-shadow: 0px 0px 5px 0px #00000022, inset 0px 0px 7px 0px #00000037   
