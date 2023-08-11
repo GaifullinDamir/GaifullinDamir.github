@@ -52,32 +52,32 @@
                             height: 0px
                     @include header_link_active
             .hamburger
-                display: block
+                display: flex
+                justify-content: space-around
+                align-items: center
                 position: absolute
                 left: 10px
                 top: 50%
                 transform: translateY(-50%)
-                width: 27px
-                height: 12px
+                width: 30px
+                height: 20px
                 cursor: pointer
                 span
                     display: block
-                    height: 2px
-                    width: 100%
-                    background-color: $main-text
-                    margin-bottom: 2px
+                    height: 7px
+                    width: 7px
+                    border: 2px solid $main-text
+                    border-radius: 100%
                     transition: 0.5s all
                 &_active
                     span
-                        margin-bottom: -2px
+                        background-color: $main-text
                         &:nth-child(1)
-                            transform: translateY(3px) rotate(-45deg)
+                            transform: translate(3px, 9px) 
                         &:nth-child(2)
-                            opacity: 0
-                            transform: translateX(-150px)
+                            transform: translateX(-15px)
                         &:nth-child(3)
-                            transform: translateY(3px) rotate(45deg)
-                    
+                            transform: translate(-17px, -9px)
     .aboutme
         min-height: 400px
         &_wrapper
